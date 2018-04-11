@@ -1,0 +1,39 @@
+<div class="header">
+    <strong>Accounts</strong>
+
+    <div class="actions">
+        <button ng-click="$ctrl.addAccount()"><img src="./resources/images/add.png">Add Account</button>
+        <button><img src="./resources/images/refresh.png">Refresh</button>
+    </div>
+</div>
+
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Market Value</th>
+        <th>Cash</th>
+        <th>Legend</th>
+    </tr>
+
+    <tr ng-repeat="account in $ctrl.accounts">
+        <td>{{ account.name }}</td>
+        <td>{{ account.marketValue | currency }}</td>
+        <td>{{ account.cash | currency }}</td>
+        <td>
+            <div class="legend" style="background-color: {{ account.legend }}"></div>
+        </td>
+    </tr>
+
+    <tr class="totals">
+        <td></td>
+        <td>
+            <strong>{{ $ctrl.total.marketValue | currency }}</strong>
+        </td>
+        <td>
+            <strong>{{ $ctrl.total.cash | currency }}</strong>
+        </td>
+        <td></td>
+    </tr>
+
+
+</table>

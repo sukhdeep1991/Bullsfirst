@@ -1,0 +1,153 @@
+body {
+    font-size: 14px;
+    font-family: "Helvetica Neue", "Arial", "sans-serif";
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+button {
+    width: 100px;
+    background: #ef4423;
+    margin-right: 10px;
+    color: white;
+    border: 0;
+    padding: 10px;
+    cursor: pointer;
+}
+button:last-child {
+	margin-right: 0px;
+}
+
+
+
+img {
+    width: 100%;
+    max-width: 100%;
+    border: none;
+}
+
+/* Header */
+#header {
+    display: flex;
+    background: orange;
+    padding: 30px 60px;
+}
+
+#header .logo h1 {
+    margin: 3px 0;
+}
+
+#header .logo .subtitle {
+    font-size: 0.8rem;
+    text-align: right;
+    font-style: italic;
+}
+
+#header .actions {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+#header .actions button img {
+    width: 25px;
+    display: block;
+    text-align: center;
+    margin: 5px auto;
+}
+.logo {
+    width: 150px;
+}
+
+main.container {
+    display: flex;
+    margin-top: 20px;
+}
+/* Left Section */
+
+.left-section {
+    flex: 1;
+    margin-right: 20px;
+}
+.left-section .header {
+    display: flex;
+    height: 30px;
+}
+
+.left-section .header button {
+    height: 25px;
+    padding: 0;
+    background: #f47621;
+}
+.left-section .header > .actions {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+.left-section .header > .actions img {
+    width: 17px;
+    vertical-align: bottom;
+    margin-right: 2px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+table td {
+    padding: 5px;
+}
+
+table th {
+    background: #ccc;
+    padding: 5px 5px 5px 20px;
+}
+table th:nth-child(4) {
+    padding: 5px;
+    text-align: center;
+}
+table th,table td {
+	text-align: right;
+}
+table th:first-child,
+table td:first-child {
+	text-align: left;
+}
+.totals td {
+    border-top: 3px solid #ccc;
+}
+
+.legend {
+    width: 30px;
+    height: 16px;
+    margin: auto;
+}
+
+/* Right Section */
+.right-section {
+    width: 300px;
+    background: #dcddde;
+    position: relative;
+    height: 350px;
+    margin-top: 30px;
+}
+.right-section .chart-container {
+
+}
+.right-section .chart-title {
+	font-weight: 600;
+	padding: 10px 0px 0 10px;
+	display: inline-block;
+}
+.right-section .chart {
+    height: 300px;
+}
+
+.right-section .help-label {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-style: italic;
+    color: #909090;
+    font-size: 12px;
+    font-weight: 600;
+}
